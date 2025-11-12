@@ -1,12 +1,13 @@
+# https://github.com/taran-r/lab11-TR-QT
+# Partner: Taran Raj
+# Partner: Quocnghia Truong
 import math
 
-
-"""
 import math
 # First example
 def add(a, b): 
     return a + b
-=======
+
 def add(a, b): 
     return a + b
 
