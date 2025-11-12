@@ -10,9 +10,6 @@ def square_root(a):
         return math.sqrt(a)
     except TypeError:
         raise TypeError('The number must be a float or int')
-    except Exception as e:
-        print(f"The following error occured: {e}")
-        raise
 
 def hypotenuse(a, b):
     try:
