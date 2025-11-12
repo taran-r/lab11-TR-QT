@@ -3,32 +3,34 @@
 # Partner: Quocnghia Truong
 import math
 
+
 import math
-# First example
-def add(a, b): 
-    return a + b
+
+
+
+
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("You can't square root a negative number.")
+        return math.sqrt(a)
+    except TypeError:
+        raise TypeError('The number must be a float or int')
+    except Exception as e:
+        print(f"The following error occured: {e}")
+        raise
+
+def hypotenuse(a, b):
+    try:
+        math.hypot(a, b)
+    except TypeError:
+        raise TypeError("The numbers a and b must be a float or int")
+    except Exception as e:
+        print(f"The following error occured: {e}")
+        raise
 
 def add(a, b): 
     return a + b
-
-def sub(a, b):
-    return a - b
-
-def mul(a, b):
-    return a * b
-
-
-
-def log(a, b):
-    if a <= 0 or b <= 0 or a == 1:
-        raise ValueError("This log function is not valid.")
-    return math.log(b, a)
-
-def exp(a, b):
-    return a ** b
-
-
-
 
 
 def sub(a, b):
@@ -39,16 +41,14 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError
+        raise ZeroDivisionError("Can't divid by 0.")
     return b / a
 
 def log(a, b):
-    if a <= 0 or a == 1:
-        raise ValueError
-    if b <= 0:
-        raise ValueError
-    return math.log(b) / math.log(a)
+    if a <= 0 or b <= 0 or a == 1:
+        raise ValueError("This log function is not valid.")
+    return math.log(b, a)
 
 def exp(a, b):
-    return a**b
+    return a ** b
 
