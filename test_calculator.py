@@ -2,7 +2,7 @@
 # Partner: Taran Raj
 # Partner: Quocnghia Truong
 import unittest
-from calculator import *
+from calculator import add, sub, div, log
 
 class TestCalculator(unittest.TestCase):
     # Partner 2

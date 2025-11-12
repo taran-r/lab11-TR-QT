@@ -3,12 +3,6 @@
 # Partner: Quocnghia Truong
 import math
 
-
-import math
-
-
-
-
 def square_root(a):
     try:
         if a < 0:
@@ -31,7 +25,6 @@ def hypotenuse(a, b):
 
 def add(a, b): 
     return a + b
-
 
 def sub(a, b):
     return a - b
