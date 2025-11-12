@@ -16,7 +16,7 @@ def square_root(a):
 
 def hypotenuse(a, b):
     try:
-        math.hypot(a, b)
+        return math.hypot(a, b)
     except TypeError:
         raise TypeError("The numbers a and b must be a float or int")
     except Exception as e:
@@ -34,7 +34,7 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError("Can't divid by 0.")
+        raise ZeroDivisionError("Can't divide by 0.")
     return b / a
 
 def log(a, b):
