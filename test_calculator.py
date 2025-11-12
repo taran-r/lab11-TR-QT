@@ -12,9 +12,9 @@ class TestCalculator(unittest.TestCase):
         self.assertTrue(add(0, 0) == 0)
 
     def test_subtract(self):
-        self.assertTrue(sub(1, -1) == 2)
-        self.assertTrue(sub(-10, -1) == -9)
-        self.assertTrue(sub(-10, 5) == -15)
+        self.assertTrue(subtract(1, -1) == 2)
+        self.assertTrue(subtract(-10, -1) == -9)
+        self.assertTrue(subtract(-10, 5) == -15)
 
     # Partner 1
     def test_multiply(self): # 3 assertions
@@ -33,19 +33,19 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self):
-        self.assertTrue(log(2, 32) == 5)
-        self.assertTrue(log(2, 2) == 1)
-        self.assertTrue(log(2, 1) == 0)
+        self.assertTrue(logarithm(2, 32) == 5)
+        self.assertTrue(logarithm(2, 2) == 1)
+        self.assertTrue(logarithm(2, 1) == 0)
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
-            log(2, 0)
+            logarithm(2, 0)
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
     #     fill in code
 
     def test_hypotenuse(self): # 3 assertions
