@@ -10,7 +10,6 @@ def square_root(a):
     except Exception as e:
         print(f"The following error occured: {e}")
         raise
-        
 
 def hypotenuse(a, b):
     try:
@@ -24,7 +23,7 @@ def hypotenuse(a, b):
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -32,18 +31,14 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError("You can't divide by 0")
+        raise ZeroDivisionError("Can't divid by 0.")
     return b / a
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 0 or b <= 0 or a == 1:
         raise ValueError("This log function is not valid.")
     return math.log(b, a)
 
 def exp(a, b):
     return a ** b
-
-
-
-
 
