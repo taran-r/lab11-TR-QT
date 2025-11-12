@@ -1,5 +1,26 @@
 import math
 
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("You can't square root a negative number.")
+        return math.sqrt(a)
+    except TypeError:
+        raise TypeError('The number must be a float or int')
+    except Exception as e:
+        print(f"The following error occured: {e}")
+        raise
+        
+
+def hypotenuse(a, b):
+    try:
+        math.hypot(a, b)
+    except TypeError:
+        raise TypeError("The numbers a and b must be a float or int")
+    except Exception as e:
+        print(f"The following error occured: {e}")
+        raise
+
 def add(a, b): 
     return a + b
 
