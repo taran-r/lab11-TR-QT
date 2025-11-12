@@ -16,13 +16,12 @@ class TestCalculator(unittest.TestCase):
         self.assertTrue(sub(-10, -1) == -9)
         self.assertTrue(sub(-10, 5) == -15)
 
-    ######## Partner 1
+    # Partner 1
     # def test_multiply(self): # 3 assertions
-    #     fill in code
+
 
     # def test_divide(self): # 3 assertions
-    #     fill in code
-    # ##########################
+         
 
     ######## Partner 2
     def test_divide_by_zero(self):
